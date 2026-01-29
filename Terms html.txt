@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Terms & Conditions | Amral Auto Imports Kenya</title>
+  <style>
+    body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial;line-height:1.7;color:#111}
+    header,footer{background:#0b1f33;color:#fff}
+    a{color:inherit}
+    .container{max-width:1000px;margin:auto;padding:24px}
+    .card{background:#f5f7fb;border:1px solid #e5e7eb;border-radius:16px;padding:18px}
+  </style>
+</head>
+<body>
+<header><div class="container">
+  <h1 style="margin:0">Terms & Conditions</h1>
+  <p style="margin:10px 0 0"><a href="index.html">← Back to Home</a></p>
+</div></header>
+
+<main class="container">
+  <div class="card">
+    <h2 style="margin-top:0">1. Services</h2>
+    <p>Amral Auto Imports Kenya provides vehicle sourcing guidance, verification support, shipping coordination, and clearance/registration guidance through licensed partners. Specific services may vary per client agreement.</p>
+
+    <h2>2. Estimates & Pricing</h2>
+    <p>Any landed cost estimate is for planning purposes. Final charges can change due to exchange rates, shipping lines, port charges, taxes/fees, and regulatory updates.</p>
+
+    <h2>3. Vehicle Condition</h2>
+    <p>Used vehicles may have wear. We assist with inspection reports/auction sheets, but final condition is based on seller/auction documentation and available inspections.</p>
+
+    <h2>4. Payments</h2>
+    <p>Payment terms (deposit, balance, timelines) are agreed per transaction. Delays in payment can affect shipping schedules.</p>
+
+    <h2>5. Delays</h2>
+    <p>Timelines may be affected by shipping schedules, port congestion, customs processes, and documentation. Amral is not liable for delays outside reasonable control.</p>
+
+    <h2>6. Liability</h2>
+    <p>To the maximum extent permitted by law, Amral’s liability is limited to service fees paid for the transaction in question, excluding indirect or consequential losses.</p>
+
+    <h2>7. Contact</h2>
+    <p><b>Email:</b> amral.importskenya@gmail.com<br/>
+       <b>WhatsApp:</b> 0739 477171</p>
+  </div>
+</main>
+
+<footer><div class="container">
+  <small>© <span id="y"></span> Amral Auto Imports Kenya</small>
+</div></footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

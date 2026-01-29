@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Japan Auction Sheet Guide | Amral Auto Imports Kenya</title>
+  <style>
+    body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial;line-height:1.65;color:#111}
+    header,footer{background:#0b1f33;color:#fff}
+    a{color:inherit}
+    .container{max-width:1000px;margin:auto;padding:24px}
+    .card{background:#f5f7fb;border:1px solid #e5e7eb;border-radius:16px;padding:18px;margin:14px 0}
+    code{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:2px 8px}
+  </style>
+</head>
+<body>
+<header><div class="container">
+  <h1 style="margin:0">Japan Auction Sheet Guide</h1>
+  <p style="margin:10px 0 0"><a href="index.html">← Back to Home</a></p>
+</div></header>
+
+<main class="container">
+  <p>Japanese car auctions use an inspection sheet to report the vehicle condition. It shows mileage, grade, interior rating, and a diagram marking scratches/dents.</p>
+
+  <div class="card">
+    <h2 style="margin-top:0">Common Grades</h2>
+    <ul>
+      <li><b>5 / 4.5:</b> Excellent (very clean)</li>
+      <li><b>4:</b> Good overall (normal minor wear)</li>
+      <li><b>3.5:</b> Average (more visible wear)</li>
+      <li><b>3 and below:</b> Heavier wear / repairs likely</li>
+      <li><b>R / RA:</b> Repaired (accident repair history)</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2 style="margin-top:0">Interior Grade (A–D)</h2>
+    <ul>
+      <li><b>A:</b> Very clean</li>
+      <li><b>B:</b> Light wear</li>
+      <li><b>C:</b> Noticeable wear/stains (common on used cars)</li>
+      <li><b>D:</b> Heavy wear/tears/smell</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2 style="margin-top:0">Diagram Codes (most common)</h2>
+    <ul>
+      <li><code>A1</code> small scratch, <code>A2</code> medium scratch, <code>A3</code> large scratch</li>
+      <li><code>U1</code> small dent, <code>U2</code> medium dent, <code>U3</code> large dent</li>
+      <li><code>W1–W3</code> panel wave / paint distortion</li>
+      <li><code>S</code> rust, <code>C</code> corrosion</li>
+      <li><code>X</code> needs replacement, <code>XX</code> replaced</li>
+    </ul>
+    <p>Tip: A few A1 marks are normal. Multiple U2/U3 dents, W3, or many X marks may mean more work needed after arrival.</p>
+  </div>
+
+  <div class="card">
+    <h2 style="margin-top:0">Send us your auction sheet</h2>
+    <p>WhatsApp the sheet and we’ll translate and explain it clearly before you buy.</p>
+    <p><b>WhatsApp:</b> 0739 477171<br/>
+       <b>Email:</b> amral.importskenya@gmail.com</p>
+  </div>
+</main>
+
+<footer><div class="container">
+  <small>© <span id="y"></span> Amral Auto Imports Kenya</small>
+</div></footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

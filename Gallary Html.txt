@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Recent Imports | Amral Auto Imports Kenya</title>
+  <style>
+    body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial;color:#111}
+    header,footer{background:#0b1f33;color:#fff}
+    a{color:inherit}
+    .container{max-width:1100px;margin:auto;padding:24px}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .ph{aspect-ratio:4/3;border-radius:16px;background:linear-gradient(135deg,#eef2f7,#f8fafc);border:1px solid #e5e7eb;display:flex;align-items:center;justify-content:center;color:#98a2b3;font-weight:700}
+    @media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+  </style>
+</head>
+<body>
+<header><div class="container">
+  <h1 style="margin:0">Recent Imports</h1>
+  <p style="margin:10px 0 0"><a href="index.html">← Back to Home</a></p>
+</div></header>
+
+<main class="container">
+  <p>Replace these placeholders with real photos inside <b>/assets/gallery/</b> and then use <code>&lt;img&gt;</code> tags.</p>
+
+  <div class="grid">
+    <div class="ph">Photo 1</div><div class="ph">Photo 2</div><div class="ph">Photo 3</div><div class="ph">Photo 4</div>
+    <div class="ph">Photo 5</div><div class="ph">Photo 6</div><div class="ph">Photo 7</div><div class="ph">Photo 8</div>
+    <div class="ph">Photo 9</div><div class="ph">Photo 10</div><div class="ph">Photo 11</div><div class="ph">Photo 12</div>
+  </div>
+</main>
+
+<footer><div class="container">
+  <small>© <span id="y"></span> Amral Auto Imports Kenya</small>
+</div></footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amral Auto Imports Kenya</title>
+  <meta name="description" content="Amral Auto Imports Kenya – Trusted vehicle importation to Kenya. Sourcing, verification, shipping, clearance, registration & delivery." />
+  <style>
+    :root{
+      --primary:#0b1f33; /* deep navy */
+      --accent:#d4a017;  /* gold */
+      --light:#f5f7fb;
+      --muted:#667085;
+      --card:#ffffff;
+      --shadow:0 10px 30px rgba(0,0,0,.08);
+      --radius:16px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,Helvetica,sans-serif;background:#fff;color:#111;line-height:1.6}
+    a{color:inherit}
+
+    header{background:linear-gradient(120deg,var(--primary),#102b46);color:#fff}
+    .container{max-width:1200px;margin:auto;padding:24px}
+
+    /* NAV */
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:10px}
+    .brand strong{font-size:16px;letter-spacing:.2px}
+    nav a{color:#fff;text-decoration:none;margin-left:16px;font-weight:650;opacity:.95}
+    nav a:hover{opacity:1;text-decoration:underline}
+
+    /* HERO */
+    .hero{display:grid;grid-template-columns:1.25fr .75fr;gap:24px;align-items:center;padding:48px 24px}
+    .hero h1{font-size:44px;line-height:1.1;margin:0 0 12px}
+    .hero p{font-size:18px;opacity:.95;margin:0 0 14px}
+
+    .btn{background:var(--accent);color:#111;padding:13px 18px;border-radius:12px;text-decoration:none;font-weight:750;display:inline-block;border:0;cursor:pointer}
+    .btn:hover{filter:brightness(1.02)}
+    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,.35);color:#fff}
+
+    /* CARDS + GRID */
+    section{padding:64px 24px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .card{background:var(--card);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
+    .card h3{margin:0 0 10px}
+    .muted{color:var(--muted)}
+
+    /* STATS */
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;background:#fff;margin-top:-36px;border-radius:18px;box-shadow:var(--shadow)}
+    .stat{padding:18px;text-align:center}
+    .stat b{font-size:26px;display:block;color:var(--primary)}
+
+    /* PROCESS */
+    .dark{background:var(--primary);color:#fff}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .step{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:18px}
+    .step b{display:block;margin-bottom:6px}
+
+    /* CALCULATOR */
+    .calc{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .field{display:flex;flex-direction:column;gap:8px;margin-bottom:12px}
+    label{font-weight:650}
+    input, select{padding:12px 12px;border-radius:12px;border:1px solid #e5e7eb;font-size:15px;outline:none}
+    input:focus, select:focus{border-color:#c9a43c;box-shadow:0 0 0 3px rgba(212,160,23,.18)}
+    .result{background:var(--light);border-radius:14px;padding:18px}
+    .result h3{margin:0 0 10px}
+    .result .line{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px dashed #d8dde6}
+    .result .line:last-child{border-bottom:0}
+    .ksh{font-variant-numeric:tabular-nums}
+
+    /* GALLERY */
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .ph{aspect-ratio:4/3;border-radius:16px;background:linear-gradient(135deg,#eef2f7,#f8fafc);border:1px solid #e5e7eb;display:flex;align-items:center;justify-content:center;color:#98a2b3;font-weight:700}
+
+    /* TESTIMONIALS */
+    .quote{font-size:15px}
+    .who{margin-top:10px;font-weight:750}
+
+    /* COUNTRY PILLS */
+    .countries{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+    .pill{background:var(--light);padding:9px 12px;border-radius:999px;font-weight:650}
+
+    /* FLOATING BUTTONS */
+    .float-wrap{position:fixed;right:18px;bottom:18px;display:flex;flex-direction:column;gap:10px;z-index:9999}
+    .float-btn{display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:999px;text-decoration:none;font-weight:800;box-shadow:0 10px 25px rgba(0,0,0,.18)}
+    .float-btn span{display:inline-block}
+    .wa{background:#25D366;color:#072a14}
+    .call{background:var(--accent);color:#111}
+
+    footer{background:#0f2238;color:#cfd8e3}
+    footer a{color:#cfd8e3;text-decoration:none}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:22px}
+
+    @media(max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .stats{grid-template-columns:repeat(2,1fr)}
+      .grid{grid-template-columns:1fr}
+      .steps{grid-template-columns:1fr 1fr}
+      .calc{grid-template-columns:1fr}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+      .footer-grid{grid-template-columns:1fr}
+      nav{display:none}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <!-- Unique inline SVG logo (also works as a standalone logo file) -->
+      <svg width="42" height="42" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-label="Amral Auto Imports logo">
+        <defs>
+          <linearGradient id="amralGold" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#d4a017"/>
+            <stop offset="100%" stop-color="#f1c85b"/>
+          </linearGradient>
+        </defs>
+        <!-- Outer import ring -->
+        <circle cx="60" cy="60" r="52" fill="none" stroke="url(#amralGold)" stroke-width="8"/>
+        <!-- Simple car silhouette -->
+        <path d="M28 66h64l-7 14H35z" fill="#d4a017"/>
+        <rect x="34" y="48" width="52" height="16" rx="8" fill="#d4a017"/>
+        <!-- Small port arrow -->
+        <path d="M60 16l8 10h-6v18h-4V26h-6z" fill="#f1c85b" opacity=".95"/>
+      </svg>
+      <strong>Amral Auto Imports Kenya</strong>
+    </div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#calculator">Landed Cost</a>
+      <a href="#gallery">Recent Imports</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="auction-sheet.html">Auction Sheet Guide</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <div class="container hero">
+    <div>
+      <h1>Import Your Car to Kenya — Safely & Seamlessly</h1>
+      <p>We source quality vehicles from Japan, UK, UAE & USA and handle shipping, clearance, registration support and delivery.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:14px">
+        <a class="btn" href="#contact">Get a Free Quote</a>
+        <a class="btn secondary" href="#calculator">Estimate Landed Cost</a>
+      </div>
+      <div class="countries" style="margin-top:18px">
+        <span class="pill">Japan</span><span class="pill">United Kingdom</span><span class="pill">UAE</span><span class="pill">USA</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>What you get with Amral</h3>
+      <p class="muted" style="margin-top:0">A clear process and honest condition guidance from selection to handover.</p>
+      <ul>
+        <li>Vehicle sourcing + options comparison</li>
+        <li>VIN checks + auction sheet explanation</li>
+        <li>Shipping coordination (RoRo / Container)</li>
+        <li>Clearance & registration guidance</li>
+        <li>Delivery to your location</li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container stats" aria-label="quick stats">
+  <div class="stat"><b>4–8 weeks</b>Typical timeline*</div>
+  <div class="stat"><b>Guided</b>Auction sheet help</div>
+  <div class="stat"><b>Transparent</b>Landed cost estimate</div>
+  <div class="stat"><b>Mombasa</b>Port handling</div>
+</div>
+
+<section id="services">
+  <div class="container">
+    <h2>Our Services</h2>
+    <p class="muted">Everything you need to import with confidence.</p>
+    <div class="grid" style="margin-top:18px">
+      <div class="card"><h3>Vehicle Sourcing</h3><p class="muted">Share your budget, make/model and year range—then we shortlist the best options.</p></div>
+      <div class="card"><h3>Verification & Inspection</h3><p class="muted">Auction sheet interpretation, photos/videos, and VIN/chassis checks.</p></div>
+      <div class="card"><h3>Shipping & Logistics</h3><p class="muted">RoRo or container shipping with regular updates and tracking support.</p></div>
+      <div class="card"><h3>Export Documentation</h3><p class="muted">We guide you through export paperwork and document checks.</p></div>
+      <div class="card"><h3>Customs Clearance Support</h3><p class="muted">Clearing coordination via licensed partners for a smooth port process.</p></div>
+      <div class="card"><h3>Registration & Delivery</h3><p class="muted">NTSA guidance plus delivery to Nairobi and other towns.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="process" class="dark">
+  <div class="container">
+    <h2>How It Works</h2>
+    <div class="steps" style="margin-top:16px">
+      <div class="step"><b>1) Consult & Quote</b>Tell us your specs. We estimate the landed cost.</div>
+      <div class="step"><b>2) Select Vehicle</b>We verify condition and documentation before purchase.</div>
+      <div class="step"><b>3) Ship to Mombasa</b>RoRo/container shipping with timeline updates.</div>
+      <div class="step"><b>4) Clear & Handover</b>Clearance + registration guidance, then delivery.</div>
+    </div>
+    <p class="muted" style="margin-top:14px;color:rgba(255,255,255,.8)">*Timelines vary depending on origin country, vessel schedule, and port processes.</p>
+  </div>
+</section>
+
+<section id="calculator">
+  <div class="container">
+    <h2>Kenya Landed Cost Calculator (Estimate)</h2>
+    <p class="muted">This is a quick estimate for planning. Actual costs can vary based on vehicle type, origin, and current fees.</p>
+
+    <div class="card" style="margin-top:16px">
+      <div class="calc">
+        <div>
+          <div class="field">
+            <label for="vehiclePrice">Vehicle Price (KES)</label>
+            <input id="vehiclePrice" type="number" min="0" value="1200000" />
+          </div>
+          <div class="field">
+            <label for="shipping">Shipping to Mombasa (KES)</label>
+            <input id="shipping" type="number" min="0" value="280000" />
+          </div>
+          <div class="field">
+            <label for="insurance">Insurance / Misc (KES)</label>
+            <input id="insurance" type="number" min="0" value="45000" />
+          </div>
+          <div class="field">
+            <label for="clearance">Clearance & Port Handling (KES)</label>
+            <input id="clearance" type="number" min="0" value="120000" />
+          </div>
+          <div class="field">
+            <label for="dutyRate">Estimated Duty/Tax Rate</label>
+            <select id="dutyRate">
+              <option value="0.45">Standard (45%)</option>
+              <option value="0.35">Lower estimate (35%)</option>
+              <option value="0.55">Higher estimate (55%)</option>
+            </select>
+          </div>
+          <button class="btn" id="calcBtn" type="button">Calculate</button>
+        </div>
+
+        <div class="result" aria-live="polite">
+          <h3>Estimated Breakdown</h3>
+          <div class="line"><span>Subtotal (Price + Shipping + Insurance)</span><span class="ksh" id="subtotal">—</span></div>
+          <div class="line"><span>Estimated Taxes/Duty</span><span class="ksh" id="taxes">—</span></div>
+          <div class="line"><span>Clearance & Port Handling</span><span class="ksh" id="clearanceOut">—</span></div>
+          <div class="line"><span><b>Total Landed Cost (Estimate)</b></span><span class="ksh" id="total"><b>—</b></span></div>
+          <p class="muted" style="margin:10px 0 0">Want the exact figure? WhatsApp us your preferred model/year and we’ll send a detailed quote.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" style="background:var(--light)">
+  <div class="container">
+    <h2>Recent Imports (Gallery)</h2>
+    <p class="muted">Replace these placeholders with your real photos (JPG/PNG) inside <code>/assets/gallery/</code>.</p>
+
+    <div class="gallery" style="margin-top:16px">
+      <div class="ph">Photo 1</div>
+      <div class="ph">Photo 2</div>
+      <div class="ph">Photo 3</div>
+      <div class="ph">Photo 4</div>
+      <div class="ph">Photo 5</div>
+      <div class="ph">Photo 6</div>
+      <div class="ph">Photo 7</div>
+      <div class="ph">Photo 8</div>
+    </div>
+
+    <div style="margin-top:16px">
+      <a class="btn" href="gallery.html">View full gallery</a>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="container">
+    <h2>Testimonials</h2>
+    <p class="muted">Swap these with real customer names/locations once you start collecting reviews.</p>
+
+    <div class="grid" style="margin-top:16px">
+      <div class="card">
+        <div class="quote">“Amral kept me updated the whole way. The condition matched the auction sheet explanation and delivery was smooth.”</div>
+        <div class="who">— Client, Nairobi</div>
+      </div>
+      <div class="card">
+        <div class="quote">“Transparent pricing. The landed cost estimate was close to the final amount. No hidden surprises.”</div>
+        <div class="who">— Client, Mombasa</div>
+      </div>
+      <div class="card">
+        <div class="quote">“They helped me choose a clean unit and explained all the marks on the Japanese auction sheet.”</div>
+        <div class="who">— Client, Kisumu</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="dark">
+  <div class="container">
+    <h2>Contact Amral</h2>
+    <p style="margin-top:0;color:rgba(255,255,255,.85)">Get started today. WhatsApp or call us for a free consultation.</p>
+    <p><b>WhatsApp:</b> 0739 477171 &nbsp; | &nbsp; <b>Email:</b> amral.importskenya@gmail.com</p>
+    <p style="color:rgba(255,255,255,.75)">Business Hours: Mon–Sat, 9:00am–6:00pm</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:14px">
+      <a class="btn" href="https://wa.me/254739477171" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      <a class="btn secondary" href="about.html">About Us</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <strong>Amral Auto Imports Kenya</strong>
+      <p class="muted" style="color:#cfd8e3">Trusted vehicle importation partner for Kenya.</p>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <a href="about.html">About Us</a><br/>
+      <a href="gallery.html">Gallery</a><br/>
+      <a href="auction-sheet.html">Auction Sheet Guide</a>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <a href="terms.html">Terms</a><br/>
+      <a href="privacy.html">Privacy</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating buttons (WhatsApp + Call) -->
+<div class="float-wrap" aria-label="quick contact">
+  <a class="float-btn wa" href="https://wa.me/254739477171" target="_blank" rel="noopener" title="WhatsApp Amral">
+    <span>WhatsApp</span>
+  </a>
+  <a class="float-btn call" href="tel:+254739477171" title="Call Amral">
+    <span>Call</span>
+  </a>
+</div>
+
+<script>
+  // ----- Landed Cost Calculator (simple estimate) -----
+  const fmt = (n) => {
+    const v = Number(n || 0);
+    return 'KES ' + v.toLocaleString('en-KE');
+  };
+
+  function calculate(){
+    const vehiclePrice = Number(document.getElementById('vehiclePrice').value || 0);
+    const shipping = Number(document.getElementById('shipping').value || 0);
+    const insurance = Number(document.getElementById('insurance').value || 0);
+    const clearance = Number(document.getElementById('clearance').value || 0);
+    const dutyRate = Number(document.getElementById('dutyRate').value || 0);
+
+    const subtotal = vehiclePrice + shipping + insurance;
+    const taxes = Math.round(subtotal * dutyRate);
+    const total = subtotal + taxes + clearance;
+
+    document.getElementById('subtotal').textContent = fmt(subtotal);
+    document.getElementById('taxes').textContent = fmt(taxes);
+    document.getElementById('clearanceOut').textContent = fmt(clearance);
+    document.getElementById('total').textContent = fmt(total);
+  }
+
+  document.getElementById('calcBtn').addEventListener('click', calculate);
+  // initial load
+  calculate();
+</script>
+</body>
+</html>

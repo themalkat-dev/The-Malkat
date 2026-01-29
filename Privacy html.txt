@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy | Amral Auto Imports Kenya</title>
+  <style>
+    body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial;line-height:1.7;color:#111}
+    header,footer{background:#0b1f33;color:#fff}
+    a{color:inherit}
+    .container{max-width:1000px;margin:auto;padding:24px}
+    .card{background:#f5f7fb;border:1px solid #e5e7eb;border-radius:16px;padding:18px}
+  </style>
+</head>
+<body>
+<header><div class="container">
+  <h1 style="margin:0">Privacy Policy</h1>
+  <p style="margin:10px 0 0"><a href="index.html">← Back to Home</a></p>
+</div></header>
+
+<main class="container">
+  <div class="card">
+    <h2 style="margin-top:0">1. What we collect</h2>
+    <ul>
+      <li>Contact details (name, phone, email)</li>
+      <li>Vehicle preferences (budget, make/model)</li>
+      <li>Transaction details needed to process imports</li>
+      <li>Messages you send via WhatsApp/email/forms</li>
+    </ul>
+
+    <h2>2. Why we collect it</h2>
+    <p>To provide quotes, assist with sourcing, coordinate shipping and clearance support, communicate updates, and provide customer support.</p>
+
+    <h2>3. Sharing</h2>
+    <p>We may share necessary details with trusted partners (e.g., clearing agents, shipping/logistics partners) only to deliver the requested service.</p>
+
+    <h2>4. Security</h2>
+    <p>We take reasonable steps to protect your information, but no method of transmission/storage is 100% secure.</p>
+
+    <h2>5. Your choices</h2>
+    <p>You may request access, correction, or deletion of your data where applicable by contacting us.</p>
+
+    <h2>6. Contact</h2>
+    <p><b>Email:</b> amral.importskenya@gmail.com<br/>
+       <b>WhatsApp:</b> 0739 477171</p>
+  </div>
+</main>
+
+<footer><div class="container">
+  <small>© <span id="y"></span> Amral Auto Imports Kenya</small>
+</div></footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
